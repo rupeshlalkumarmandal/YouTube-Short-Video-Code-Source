@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Size</title>
+<style>
+    /* General styles */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, sans-serif;
+    background-color: white
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    color: black
+}
+.background-cover{
+    height: 300px;
+    background-image: url(https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378246.jpg?t=st=1726759342~exp=1726762942~hmac=a573adf21d44d993c2062e63dfe1231989da4552bc61a7feb4fdac7070be03e7&w=900);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ff9999;
+    margin: 20px;
+    border: 4px solid black;
+}
+
+.background-contain{
+    height: 285px;
+    width: 500px;
+    background-image: url(https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378239.jpg?size=626&ext=jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 20px;
+    border: 4px solid black;
+}
+
+.background-fixed-size{
+    width: 300px;
+    background-image: url(https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378245.jpg?t=st=1726759611~exp=1726763211~hmac=b1fed87ca31fd5ed86ff21fa5b313f4d3e967441f3432330fd37067b2c1c371e&w=900);
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: white;
+    margin: 20px;
+    border: 4px solid black;
+}
+
+.backgrond-percentage{
+    height: 20ex;
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54565.jpg?t=st=1726760104~exp=1726763704~hmac=3e70b0fc397a35476364838e657547a6d93524657c8d9b1ea05fd0a9a08f2b68&w=740);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 20px;
+    border: 4px solid black;
+}
+.auto{
+    height: 200px;
+    width: 400px;
+    background-image: url(https://img.freepik.com/free-photo/top-view-paint-brushes-with-copy-space_23-2148563603.jpg?t=st=1726761142~exp=1726764742~hmac=a022ea39f9ced6b34239746f24c5a29a78fbfeeb33715a7599a239d46410373a&w=900);
+    background-color: black;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 20px;
+    border: 4px solid black;
+}
+</style>
+</head>
+<body>
+    <div class="background-cover">
+        <h2>Background Size : cover</h2>
+    </div>
+    <div class="background-contain">
+        <h2>Background Size : contain</h2>
+    </div>
+
+    <div class="background-fixed-size">
+        <h2>Background fixed size</h2>
+    </div>
+
+    <div class="backgrond-percentage">
+<h2>Background Size : 50% 50%</h2>
+    </div>
+
+    <div class="auto">
+        <h2>Background Size: Auto</h2>
+    </div>
+</body>
+</html>
